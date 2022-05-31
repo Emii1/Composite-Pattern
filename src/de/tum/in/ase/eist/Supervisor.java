@@ -26,6 +26,11 @@ public  class Supervisor extends Employee {
         return supervisedEmployees;
     }
 
+    public Supervisor(String name, List<Employee> supervisedEmployees) {
+        super(name);
+        this.supervisedEmployees = supervisedEmployees;
+    }
+
     private List<Employee> supervisedEmployees;
 
 
