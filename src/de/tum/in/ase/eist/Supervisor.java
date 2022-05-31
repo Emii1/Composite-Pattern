@@ -1,6 +1,6 @@
 package de.tum.in.ase.eist;
 
-public class Supervisor extends Employee {
+public abstract class Supervisor extends Employee {
 
     public Supervisor(String name) {
         super(name);
@@ -15,5 +15,21 @@ public class Supervisor extends Employee {
     public void listHierarchy(int level){
 
     }
+
+
+    public Supervisor(String name, Supervisor supervisedEmployees) {
+        super(name);
+        this.supervisedEmployees = supervisedEmployees;
+    }
+
+    public Supervisor getSupervisedEmployees() {
+        return supervisedEmployees;
+    }
+
+    private Supervisor supervisedEmployees;
+
+
+
+
     // TODO 3: Implement listHierarchy() for Supervisor
 }
