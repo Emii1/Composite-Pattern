@@ -38,13 +38,6 @@ public  class Supervisor extends Employee {
   // TODO 3: Implement listHierarchy() for Supervisor
 
 
-    @Override
-    public void printName(int level) {
-        super.printName(level);
-    }
 
-    public void listHierarchy() {
-
-    }
 
 }
