@@ -1,6 +1,5 @@
 package de.tum.in.ase.eist;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public  class Supervisor extends Employee {
