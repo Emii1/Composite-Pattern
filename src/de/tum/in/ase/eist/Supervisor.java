@@ -17,16 +17,6 @@ public abstract class Supervisor extends Employee {
     }
 
 
-    public Supervisor(String name, Supervisor supervisedEmployees) {
-        super(name);
-        this.supervisedEmployees = supervisedEmployees;
-    }
-
-    public Supervisor getSupervisedEmployees() {
-        return supervisedEmployees;
-    }
-
-    private Supervisor supervisedEmployees;
 
 
 
