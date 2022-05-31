@@ -8,7 +8,7 @@ public  class Supervisor extends Employee {
 
     public Supervisor(String name) {
         super(name);
-        this.supervisedEmployees=new ArrayList<>();
+        this.supervisedEmployees = new ArrayList<>();
     }
 
 
