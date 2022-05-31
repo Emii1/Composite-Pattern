@@ -8,12 +8,12 @@ public class Worker extends Employee {
     }
 
     // TODO 1: Implement the Worker class
-    public void listHierarchy(int level) {
 
-    }
 
 	// TODO 3: Implement listHierarchy() for Worker
 
 
-
+    public void listHierarchy(int level) {
+       super.printName(level);
+    }
 }

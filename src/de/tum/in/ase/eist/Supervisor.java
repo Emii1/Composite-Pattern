@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public  class Supervisor extends Employee {
-    private List<Employee> supervisedEmployees;
+    private final List<Employee> supervisedEmployees;
+
 
     public Supervisor(String name) {
         super(name);
@@ -17,15 +18,14 @@ public  class Supervisor extends Employee {
 
     public void hireEmployee(Employee employee)  {
 
+        supervisedEmployees.add(employee);
     }
 
     public void fireEmployee(Employee employee) {
-
+        supervisedEmployees.remove(employee);
    }
 
-    public void listHierarchy(int level) {
 
-    }
 
     public List<Employee> getSupervisedEmployees() {
         return supervisedEmployees;
@@ -34,7 +34,13 @@ public  class Supervisor extends Employee {
 
     // TODO 3: Implement listHierarchy() for Supervisor
 
+    public void listHierarchy(int level) {
+       super.printName(level);
+        for (Employee supervisedEmployee : supervisedEmployees) {
+            supervisedEmployee.listHierarchy(level + 1);
+        }
 
+    }
 
 
 }
