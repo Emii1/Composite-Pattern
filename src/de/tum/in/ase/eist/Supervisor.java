@@ -6,7 +6,7 @@ import java.util.List;
 public  class Supervisor extends Employee {
     public Supervisor(String name) {
         super(name);
-        List<Employee> supervisedEmployees = new ArrayList<>();
+
     }
 
 
