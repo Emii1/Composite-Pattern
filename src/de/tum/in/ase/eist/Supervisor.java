@@ -18,7 +18,7 @@ public  class Supervisor extends Employee {
 
    }
 
-    public void listHierarchy(int level){
+    public void listHierarchy(int level) {
 
     }
 

@@ -8,7 +8,7 @@ public class Worker extends Employee {
     }
 
     // TODO 1: Implement the Worker class
-    public void listHierarchy(int level){
+    public void listHierarchy(int level) {
 
     }
 
