@@ -1,6 +1,10 @@
 package de.tum.in.ase.eist;
 
-public class Supervisor {
+public class Supervisor extends Employee {
+
+    public Supervisor(String name) {
+        super(name);
+    }
 
     // TODO 2: Implement the Supervisor class
     public void hireEmployee(Employee employee) {
