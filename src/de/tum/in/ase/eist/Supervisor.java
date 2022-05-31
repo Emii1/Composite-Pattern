@@ -2,7 +2,7 @@ package de.tum.in.ase.eist;
 
 import java.util.List;
 
-public abstract class Supervisor extends Employee {
+public  class Supervisor extends Employee {
     public Supervisor(String name) {
         super(name);
     }
