@@ -1,5 +1,7 @@
 package de.tum.in.ase.eist;
 
+import java.util.List;
+
 public abstract class Supervisor extends Employee {
 
     public Supervisor(String name) {
@@ -15,6 +17,9 @@ public abstract class Supervisor extends Employee {
     public void listHierarchy(int level){
 
     }
+
+    private List<Employee> supervisedEmployees;
+
 
 
 
